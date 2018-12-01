@@ -1,23 +1,158 @@
----
-layout: default
----
+<!doctype html>
+<html lang="en">
 
-<div class="home">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Bryant Gossett</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Anaheim" rel="stylesheet">
+  <link href="./assets/css/album.css" rel="stylesheet">
+</head>
 
-  <h1 class="page-heading">Posts</h1>
+<body>
+  <header>
+    <div class="collapse bg-dark" id="navbarHeader">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-7 py-4">
+            <h4 class="text-white">About</h4>
+            <p class="text-white">
+              I am currently enrolled in a full-stack web development boot camp, this portfolio encompasses my most
+              recent work.
+            </p>
+          </div>
+          <div class="col-sm-4 offset-md-1 py-4">
+            <h4 class="text-white">Contact</h4>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="https://github.com/Bgosse1" class="text-white mr-2"><i class="fab fa-github fa-3x"></i></a>
+                <a href="https://www.linkedin.com/in/bryant-gossett-4b099070" class="text-white"><i class="fab fa-linkedin fa-3x"></i></a>
+              </li>
+              <li>
+                <span class="text-white">Bryant.Gossett@gmail.com</span>
+              </li>
+            </ul>
+            <h5 class="text-white">Resume/<span><a href="https://prezi.com/hikvp_j7i7nu/bryant-d-gossett/?utm_campaign=share&utm_medium=copy">Prezumé</a></span></h5>
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="./assets/images/Resume.pdf"><i class="far fa-file-pdf fa-3x whiteIcon"></i></a>
+              </li>
+            </ul>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <strong>Bryant Gossett</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader"
+          aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
+  </header>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
+  <main role="main">
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <section class="jumbotron text-center gradient">
+      <div class="container">
+        <h1 class="jumbotron-heading headerFont">Hello, I'm Bryant!</h1>
+        <p class="lead text-dark gothic">
+          I'm <span class="italics">almost</span> a full-stack developer.
+        </p>
+      </div>
+    </section>
 
-</div>
+    <div class="album py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top imgHeight" src="./assets/images/GifTastic.png" alt="GifTastic">
+              <div class="card-body d-flex flex-column">
+                <header><strong>GifTastic</strong></header>
+                <p class="card-text">
+                  Retrieves a collection of animal gifs. Choose from the provided list or add any of your favorite
+                  animals. Click on the image to start and stop the animation.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://bgosse1.github.io/GifTastic/" role="button">Demo</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/Bgosse1/GifTastic" role="button">Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top imgHeight" src="./assets/images/Train-Scheduler.png" alt="Train-Scheduler">
+              <div class="card-body d-flex flex-column">
+                <header><strong>Train Scheduler</strong></header>
+                <p class="card-text">
+                  This site provides up-to-date train information based on arrival and departure times. It also
+                  includes a minute by minute countdown to train arrival.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://bgosse1.github.io/Train-Scheduler/" role="button">Demo</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/Bgosse1/Train-Scheduler" role="button">Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-4 shadow-sm">
+              <img class="card-img-top imgHeight" src="./assets/images/Treasure-Hunt.png" alt="Treasure-Hunt">
+              <div class="card-body d-flex flex-column">
+                <header><strong>Treasure Hunt</strong></header>
+                <p class="card-text">
+                  This game utilizes Google Maps which provides hidden locations throughout the world. Related clues
+                  are provided to as a way to narrow the search, and find the hidden treasure.
+                </p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group">
+                    <a class="btn btn-sm btn-outline-secondary" href="https://bgosse1.github.io/project1/" role="button">Demo</a>
+                    <a class="btn btn-sm btn-outline-secondary" href="https://github.com/Bgosse1/project1" role="button">Repo</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="text-muted">
+    <div class="container">
+      <p class="float-right">
+        <a href="#">Back to top</a>
+      </p>
+      <p>Bryant Gossett &copy; 2018</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
