@@ -52,10 +52,16 @@ footer p {
 .italics{
   font-style: italic;
 }
-.gothic{
+.Anaheim{
   font-family: 'Anaheim', sans-serif;
   font-size: 2.5rem;
 }
 .whiteIcon{
   color:white;
+}
+.navName{
+  font-size: 1.5rem;
+}
+.contentGradient{
+  background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
